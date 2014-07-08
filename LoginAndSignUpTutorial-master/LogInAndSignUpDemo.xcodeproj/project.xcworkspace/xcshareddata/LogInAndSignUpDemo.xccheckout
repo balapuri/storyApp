@@ -5,34 +5,34 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>92EC6FE1-8707-481D-9189-14D197C9413D</string>
+	<string>48613002-6017-4E3B-81C7-51453B9743A7</string>
 	<key>IDESourceControlProjectName</key>
 	<string>LogInAndSignUpDemo</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>CB1784A0-8554-48CD-AC22-FA4E17583CDE</key>
-		<string>https://github.com/balapuri/storyApp</string>
+		<key>213F8606-DCB9-4423-B9E5-4C0350368669</key>
+		<string>https://github.com/balapuri/storyApp.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>LoginAndSignUpTutorial-master/LogInAndSignUpDemo.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>CB1784A0-8554-48CD-AC22-FA4E17583CDE</key>
+		<key>213F8606-DCB9-4423-B9E5-4C0350368669</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/balapuri/storyApp</string>
+	<string>https://github.com/balapuri/storyApp.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>CB1784A0-8554-48CD-AC22-FA4E17583CDE</string>
+	<string>213F8606-DCB9-4423-B9E5-4C0350368669</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>CB1784A0-8554-48CD-AC22-FA4E17583CDE</string>
+			<string>213F8606-DCB9-4423-B9E5-4C0350368669</string>
 			<key>IDESourceControlWCCName</key>
 			<string>storyApp</string>
 		</dict>

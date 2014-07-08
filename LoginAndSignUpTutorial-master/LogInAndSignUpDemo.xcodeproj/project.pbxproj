@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		143C2CDD18203DBB00DFCD05 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 143C2CDC18203DBB00DFCD05 /* Parse.framework */; };
 		143C2CDF182058B900DFCD05 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 143C2CDE182058B900DFCD05 /* FacebookSDK.framework */; };
+		276A8074196C928300ACB05F /* AppName.png in Resources */ = {isa = PBXBuildFile; fileRef = 276A8072196C928300ACB05F /* AppName.png */; };
+		276A8075196C928300ACB05F /* LogInBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 276A8073196C928300ACB05F /* LogInBackground.png */; };
 		74366EA7158AAE0F00A17D8A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74366EA6158AAE0F00A17D8A /* UIKit.framework */; };
 		74366EA9158AAE0F00A17D8A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74366EA8158AAE0F00A17D8A /* Foundation.framework */; };
 		74366EAB158AAE1000A17D8A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74366EAA158AAE0F00A17D8A /* CoreGraphics.framework */; };
@@ -52,6 +54,8 @@
 /* Begin PBXFileReference section */
 		143C2CDC18203DBB00DFCD05 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		143C2CDE182058B900DFCD05 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		276A8072196C928300ACB05F /* AppName.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppName.png; sourceTree = "<group>"; };
+		276A8073196C928300ACB05F /* LogInBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LogInBackground.png; sourceTree = "<group>"; };
 		74366EA2158AAE0F00A17D8A /* LogInAndSignUpDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LogInAndSignUpDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74366EA6158AAE0F00A17D8A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		74366EA8158AAE0F00A17D8A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -138,6 +142,8 @@
 		741203C415900A3C00820BE9 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				276A8072196C928300ACB05F /* AppName.png */,
+				276A8073196C928300ACB05F /* LogInBackground.png */,
 				C4FD613517286AC800F61563 /* Icon.png */,
 				C4FD613717286ACD00F61563 /* Icon@2x.png */,
 				C4BBB7C016FD2D73003CA3F7 /* Default.png */,
@@ -312,7 +318,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F167E1B196C6C1E002F21A1 /* Storyteller.storyboard in Resources */,
+				276A8074196C928300ACB05F /* AppName.png in Resources */,
 				74366EB1158AAE1000A17D8A /* InfoPlist.strings in Resources */,
+				276A8075196C928300ACB05F /* LogInBackground.png in Resources */,
 				74366EE8158AC82C00A17D8A /* DefaultSettingsViewController.xib in Resources */,
 				74366EF5158AF2D300A17D8A /* PropertyConfigViewController.xib in Resources */,
 				74366EFB158B95C800A17D8A /* SubclassConfigViewController.xib in Resources */,
