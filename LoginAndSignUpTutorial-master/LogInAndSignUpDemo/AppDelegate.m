@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "DemoTableViewController.h"
+#import "DefaultSettingsViewController.h"
 
 @implementation AppDelegate
 
@@ -30,7 +31,7 @@
     [defaultACL setPublicReadAccess:YES];
     [PFACL setDefaultACL:defaultACL withAccessForCurrentUser:YES];
     
-    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[DemoTableViewController alloc] init]];
+    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[DefaultSettingsViewController alloc] init]];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
