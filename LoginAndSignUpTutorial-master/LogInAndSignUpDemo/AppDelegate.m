@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "DemoTableViewController.h"
 #import "DefaultSettingsViewController.h"
+#import "BNRStoryListViewController.h"
 
 @implementation AppDelegate
 
@@ -31,9 +32,19 @@
     [defaultACL setPublicReadAccess:YES];
     [PFACL setDefaultACL:defaultACL withAccessForCurrentUser:YES];
     
-    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[DefaultSettingsViewController alloc] init]];
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
+//    UINavigationController *navController = [[UINavigationController alloc] init];
+//    if (<#condition#>) {
+//        <#statements#>
+//    }
+    
+    
+//    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[BNRStoryListViewController alloc] init]];
+//    self.window.backgroundColor = [UIColor whiteColor];
+//    [self.window makeKeyAndVisible];
+    
+    UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Storyteller" bundle:nil];
+    UIViewController *initViewController = [storyBoard instantiateInitialViewController];
+    [self.window setRootViewController:initViewController];
     return YES;
 }
 
