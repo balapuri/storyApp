@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6185.7" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="qQm-eB-jCu">
     <dependencies>
-        <deployment defaultVersion="1792" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6181.2"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
+        <!--Default Settings View Controller-->
         <scene sceneID="hEd-PI-NPX">
             <objects>
-                <navigationController id="qQm-eB-jCu" sceneMemberID="viewController">
+                <navigationController id="qQm-eB-jCu" customClass="DefaultSettingsViewController" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="1vk-Ky-oDW">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -24,7 +23,7 @@
         <!--Story Teller-->
         <scene sceneID="dxL-Ar-yA7">
             <objects>
-                <tableViewController id="Qdh-Qp-MeI" sceneMemberID="viewController">
+                <tableViewController id="Qdh-Qp-MeI" customClass="BNRStoryListViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="bS5-tC-sRu">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

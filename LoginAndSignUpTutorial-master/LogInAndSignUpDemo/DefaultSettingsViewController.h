@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 Parse. All rights reserved.
 //
 
-@interface DefaultSettingsViewController : UIViewController <PFLogInViewControllerDelegate, PFSignUpViewControllerDelegate>
+@interface DefaultSettingsViewController : UINavigationController <PFLogInViewControllerDelegate, PFSignUpViewControllerDelegate>
 
 @property (nonatomic, strong) IBOutlet UILabel *welcomeLabel;
 
