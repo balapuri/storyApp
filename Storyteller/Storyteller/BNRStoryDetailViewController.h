@@ -10,6 +10,7 @@
 #import "BNRStory.h"
 
 @interface BNRStoryDetailViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@property (weak, nonatomic) IBOutlet UITableView *chooseUsers;
 
 @property (nonatomic) BOOL existingStory;
 @property (nonatomic) BNRStory *storyDetail;

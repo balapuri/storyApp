@@ -7,6 +7,7 @@
 //
 
 #import "BNRStoryDetailViewController.h"
+#import "BNRCheckUsersCellTableViewCell.h"
 
 @implementation BNRStoryDetailViewController
 
@@ -14,6 +15,11 @@
 - (IBAction)dismiss:(id)sender
 {
     [self.presentingViewController dismissViewControllerAnimated:YES completion:NULL];
+    
+    //when the DONE button is clicked
+    PFObject *story = [PFObject objectWithClassName:@"Conversation"];
+    //story[@"originTeller"] = [PFObject currentUser];
+    //story[@"tellers"] = ;
     
 }
 
@@ -23,6 +29,16 @@
 //    
 //    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"UITableViewCell"];
 //}
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    //load the NIB file
+    UINib *nib = [UINib nibWithNibName:@"BNRUsersItemCellViewController" bundle:nil];
+    
+    //register this NIB, which contains the cell
+    [self.tableView registerNib:nib forCellReuseIdentifier:@"BNRUsersItemCellViewController"];
+}
 
 - (NSArray *)grabUsers {
     PFQuery *query = [PFQuery queryWithClassName:@"User"];
@@ -37,9 +53,12 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"UITableViewCell"
-                                                            forIndexPath:indexPath];
-    cell.textLabel.text = [self grabUsers][indexPath.row];
+    BNRCheckUsersCellTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"BNRCheckUsersCellTableViewCell"];
+    
+    BNRCheckUsersCellTableViewCell *item = [self grabUsers][indexPath.row];
+    //question: what object is item? 
+    
+    cell.usernameLabel.text = NSStringFromClass([item class]);
     
     return cell; 
 }
