@@ -20,21 +20,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self.signUpView setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"MainBG.png"]]];
-    [self.signUpView setLogo:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"logo.png"]]];
+    [self.signUpView setBackgroundColor:[UIColor whiteColor]];
+    [self.signUpView setLogo:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"AppName.png"]]];
     
-    // Change button apperance
-    [self.signUpView.dismissButton setImage:[UIImage imageNamed:@"Exit.png"] forState:UIControlStateNormal];
-    [self.signUpView.dismissButton setImage:[UIImage imageNamed:@"ExitDown.png"] forState:UIControlStateHighlighted];
     
-    [self.signUpView.signUpButton setBackgroundImage:[UIImage imageNamed:@"SignUp.png"] forState:UIControlStateNormal];
-    [self.signUpView.signUpButton setBackgroundImage:[UIImage imageNamed:@"SignUpDown.png"] forState:UIControlStateHighlighted];
-    [self.signUpView.signUpButton setTitle:@"" forState:UIControlStateNormal];
-    [self.signUpView.signUpButton setTitle:@"" forState:UIControlStateHighlighted];
-    
-    // Add background for fields
-    [self setFieldsBackground:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"SignUpFieldBG.png"]]];
-    [self.signUpView insertSubview:fieldsBackground atIndex:1];
+//    // Add background for fields
+//    [self setFieldsBackground:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"SignUpFieldBG.png"]]];
+//    [self.signUpView insertSubview:fieldsBackground atIndex:1];
     
     // Remove text shadow
     CALayer *layer = self.signUpView.usernameField.layer;

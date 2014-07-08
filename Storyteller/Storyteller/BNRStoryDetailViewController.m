@@ -17,7 +17,7 @@
     [self.presentingViewController dismissViewControllerAnimated:YES completion:NULL];
     
     //when the DONE button is clicked
-    PFObject *story = [PFObject objectWithClassName:@"Conversation"];
+    //PFObject *story = [PFObject objectWithClassName:@"Conversation"];
     //story[@"originTeller"] = [PFObject currentUser];
     //story[@"tellers"] = ;
     

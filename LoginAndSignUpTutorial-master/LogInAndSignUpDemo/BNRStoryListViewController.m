@@ -21,13 +21,16 @@
 
 - (void)viewWillAppear:(BOOL)animated
 {
+    NSLog(@"%@ this is 2it", [PFUser currentUser]);
     [super viewWillAppear:animated];
     
     [self.tableView reloadData];
 }
 
-- (void)viewDidAppear:(BOOL)animated {
-    [super viewDidAppear:animated];
+- (void)viewDidLoad:(BOOL)animated {
+    [super viewDidLoad];
+    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"UITableViewCell"];
+    NSLog(@"%@ this is it", [PFUser currentUser]);
     if (![PFUser currentUser]) { // No user logged in
         NSLog(@"entered");
         // Create the log in view controller
@@ -53,10 +56,15 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"UITableViewCell" forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"UITableViewCell"];
     BNRStory *story = self.currentStories[indexPath.row];
     cell.textLabel.text = story.name;
-    return cell;
+    if (cell) {
+        return cell;
+    } else {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"UITableViewCell"];
+        return cell;
+    }
 }
 
 - (NSMutableArray *)currentStories

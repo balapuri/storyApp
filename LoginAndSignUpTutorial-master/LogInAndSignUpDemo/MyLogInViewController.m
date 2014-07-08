@@ -11,6 +11,7 @@
 
 @interface MyLogInViewController ()
 @property (nonatomic, strong) UIImageView *fieldsBackground;
+
 @end
 
 @implementation MyLogInViewController
@@ -20,34 +21,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self.logInView setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"MainBG.png"]]];
-    [self.logInView setLogo:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Logo.png"]]];
-    
-    // Set buttons appearance
-    [self.logInView.dismissButton setImage:[UIImage imageNamed:@"Exit.png"] forState:UIControlStateNormal];
-    [self.logInView.dismissButton setImage:[UIImage imageNamed:@"ExitDown.png"] forState:UIControlStateHighlighted];
-    
-    [self.logInView.facebookButton setImage:nil forState:UIControlStateNormal];
-    [self.logInView.facebookButton setImage:nil forState:UIControlStateHighlighted];
-    [self.logInView.facebookButton setBackgroundImage:[UIImage imageNamed:@"FacebookDown.png"] forState:UIControlStateHighlighted];
-    [self.logInView.facebookButton setBackgroundImage:[UIImage imageNamed:@"Facebook.png"] forState:UIControlStateNormal];
-    [self.logInView.facebookButton setTitle:@"" forState:UIControlStateNormal];
-    [self.logInView.facebookButton setTitle:@"" forState:UIControlStateHighlighted];
-    
-    [self.logInView.twitterButton setImage:nil forState:UIControlStateNormal];
-    [self.logInView.twitterButton setImage:nil forState:UIControlStateHighlighted];
-    [self.logInView.twitterButton setBackgroundImage:[UIImage imageNamed:@"Twitter.png"] forState:UIControlStateNormal];
-    [self.logInView.twitterButton setBackgroundImage:[UIImage imageNamed:@"TwitterDown.png"] forState:UIControlStateHighlighted];
-    [self.logInView.twitterButton setTitle:@"" forState:UIControlStateNormal];
-    [self.logInView.twitterButton setTitle:@"" forState:UIControlStateHighlighted];
-    
-    [self.logInView.signUpButton setBackgroundImage:[UIImage imageNamed:@"Signup.png"] forState:UIControlStateNormal];
-    [self.logInView.signUpButton setBackgroundImage:[UIImage imageNamed:@"SignupDown.png"] forState:UIControlStateHighlighted];
-    [self.logInView.signUpButton setTitle:@"" forState:UIControlStateNormal];
-    [self.logInView.signUpButton setTitle:@"" forState:UIControlStateHighlighted];
+    [self.logInView setBackgroundColor:[UIColor whiteColor]];
+    [self.logInView setLogo:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"AppName.png"]]];
     
     // Add login field background
-    fieldsBackground = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"LoginFieldBG.png"]];
+    fieldsBackground = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"LogInBackground.png"]];
     [self.logInView addSubview:self.fieldsBackground];
     [self.logInView sendSubviewToBack:self.fieldsBackground];
     
@@ -66,11 +44,10 @@
 - (void)viewDidLayoutSubviews {
     [super viewDidLayoutSubviews];
     
-    // Set frame for elements
-    [self.logInView.dismissButton setFrame:CGRectMake(10.0f, 10.0f, 87.5f, 45.5f)];
-    [self.logInView.logo setFrame:CGRectMake(66.5f, 70.0f, 187.0f, 58.5f)];
-    [self.logInView.facebookButton setFrame:CGRectMake(35.0f, 287.0f, 120.0f, 40.0f)];
-    [self.logInView.twitterButton setFrame:CGRectMake(35.0f+130.0f, 287.0f, 120.0f, 40.0f)];
+    [self.logInView.logInButton setFrame:CGRectMake(35.0f, 330.0f, 250.0f, 40.0f)];
+    
+    [self.logInView.logo setFrame:CGRectMake(66.5f, 80.0f, 187.0f, 58.5f)];
+    
     [self.logInView.signUpButton setFrame:CGRectMake(35.0f, 385.0f, 250.0f, 40.0f)];
     [self.logInView.usernameField setFrame:CGRectMake(35.0f, 145.0f, 250.0f, 50.0f)];
     [self.logInView.passwordField setFrame:CGRectMake(35.0f, 195.0f, 250.0f, 50.0f)];

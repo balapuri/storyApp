@@ -10,6 +10,8 @@
 #import "DemoTableViewController.h"
 #import "DefaultSettingsViewController.h"
 #import "BNRStoryListViewController.h"
+#import "MyLogInViewController.h"
+#import "SubclassConfigViewController.h"
 
 @implementation AppDelegate
 
@@ -38,13 +40,13 @@
 //    }
     
     
-//    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[BNRStoryListViewController alloc] init]];
+//    self.window.rootViewController = [[SubclassConfigViewController alloc] init];
 //    self.window.backgroundColor = [UIColor whiteColor];
 //    [self.window makeKeyAndVisible];
     
     UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Storyteller" bundle:nil];
     UIViewController *initViewController = [storyBoard instantiateInitialViewController];
-    [self.window setRootViewController:initViewController];
+   [self.window setRootViewController:initViewController];
     return YES;
 }
 
