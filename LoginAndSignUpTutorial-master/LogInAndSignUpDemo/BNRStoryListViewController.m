@@ -9,6 +9,8 @@
 #import "BNRStoryListViewController.h"
 #import "BNRStory.h"
 #import "BNRStoryDetailViewController.h"
+#import "MyLogInViewController.h"
+#import "MySignUpViewController.h"
 
 @interface BNRStoryListViewController ()
 
@@ -32,19 +34,19 @@
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"UITableViewCell"];
     NSLog(@"%@ this is it", [PFUser currentUser]);
     if (![PFUser currentUser]) { // No user logged in
-        NSLog(@"entered");
-        // Create the log in view controller
-        PFLogInViewController *logInViewController = [[PFLogInViewController alloc] init];
-        [logInViewController setDelegate:self]; // Set ourselves as the delegate
+        // Customize the Log In View Controller
+        MyLogInViewController *logInViewController = [[MyLogInViewController alloc] init];
+        logInViewController.delegate = self;
+        logInViewController.facebookPermissions = @[@"friends_about_me"];
+        logInViewController.fields = PFLogInFieldsUsernameAndPassword |PFLogInFieldsSignUpButton | PFLogInFieldsLogInButton;
         
-        // Create the sign up view controller
-        PFSignUpViewController *signUpViewController = [[PFSignUpViewController alloc] init];
-        [signUpViewController setDelegate:self]; // Set ourselves as the delegate
+        // Customize the Sign Up View Controller
+        MySignUpViewController *signUpViewController = [[MySignUpViewController alloc] init];
+        signUpViewController.delegate = self;
+        signUpViewController.fields = PFSignUpFieldsDefault | PFSignUpFieldsAdditional;
+        logInViewController.signUpController = signUpViewController;
         
-        // Assign our sign up controller to be displayed from the login controller
-        [logInViewController setSignUpController:signUpViewController];
-        
-        // Present the log in view controller
+        // Present Log In View Controller
         [self presentViewController:logInViewController animated:YES completion:NULL];
     }
 }
@@ -168,7 +170,7 @@
 
 - (IBAction)logOutButtonTapAction:(id)sender {
     [PFUser logOut];
-    [self viewDidAppear:YES];
+    [self viewDidLoad:YES];
 }
 
 
