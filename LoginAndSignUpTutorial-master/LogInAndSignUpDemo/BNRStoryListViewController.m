@@ -21,6 +21,7 @@
 
 - (void)viewWillAppear:(BOOL)animated
 {
+    NSLog(@"%@ this is 2it", [PFUser currentUser]);
     [super viewWillAppear:animated];
     
     [self.tableView reloadData];
@@ -28,6 +29,7 @@
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
+    NSLog(@"%@ this is it", [PFUser currentUser]);
     if (![PFUser currentUser]) { // No user logged in
         NSLog(@"entered");
         // Create the log in view controller
