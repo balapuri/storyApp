@@ -10,4 +10,10 @@
 
 @implementation BNRStoryDetailViewController
 
+
+- (IBAction)dismiss:(id)sender
+{
+    [self.presentingViewController dismissViewControllerAnimated:YES completion:NULL];
+}
+
 @end
