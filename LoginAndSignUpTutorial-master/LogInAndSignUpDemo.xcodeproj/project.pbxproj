@@ -34,10 +34,10 @@
 		74366F03158B973C00A17D8A /* MyLogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74366F02158B973C00A17D8A /* MyLogInViewController.m */; };
 		74366F06158B975500A17D8A /* MySignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74366F05158B975500A17D8A /* MySignUpViewController.m */; };
 		8F167E18196C6C1E002F21A1 /* BNRStoryListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F167E12196C6C1E002F21A1 /* BNRStoryListViewController.m */; };
-		8F167E19196C6C1E002F21A1 /* BNRStoryDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F167E14196C6C1E002F21A1 /* BNRStoryDetailViewController.m */; };
 		8F167E1A196C6C1E002F21A1 /* BNRStory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F167E16196C6C1E002F21A1 /* BNRStory.m */; };
 		8F167E1B196C6C1E002F21A1 /* Storyteller.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F167E17196C6C1E002F21A1 /* Storyteller.storyboard */; };
 		8F167E21196C84C9002F21A1 /* BNRLoginDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F167E20196C84C9002F21A1 /* BNRLoginDelegate.m */; };
+		8F167E24196CB22A002F21A1 /* BNRStoryDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F167E23196CB22A002F21A1 /* BNRStoryDetailViewController.m */; };
 		C4BBB7B516FD2ABC003CA3F7 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4BBB7B316FD2ABC003CA3F7 /* CoreLocation.framework */; };
 		C4BBB7B616FD2ABC003CA3F7 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4BBB7B416FD2ABC003CA3F7 /* StoreKit.framework */; };
 		C4BBB7BA16FD2B0F003CA3F7 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4BBB7B716FD2B0F003CA3F7 /* Accounts.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
@@ -90,13 +90,13 @@
 		74366F05158B975500A17D8A /* MySignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySignUpViewController.m; sourceTree = "<group>"; };
 		8F167E11196C6C1E002F21A1 /* BNRStoryListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRStoryListViewController.h; sourceTree = "<group>"; };
 		8F167E12196C6C1E002F21A1 /* BNRStoryListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRStoryListViewController.m; sourceTree = "<group>"; };
-		8F167E13196C6C1E002F21A1 /* BNRStoryDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRStoryDetailViewController.h; sourceTree = "<group>"; };
-		8F167E14196C6C1E002F21A1 /* BNRStoryDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRStoryDetailViewController.m; sourceTree = "<group>"; };
 		8F167E15196C6C1E002F21A1 /* BNRStory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRStory.h; sourceTree = "<group>"; };
 		8F167E16196C6C1E002F21A1 /* BNRStory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRStory.m; sourceTree = "<group>"; };
 		8F167E17196C6C1E002F21A1 /* Storyteller.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyteller.storyboard; sourceTree = "<group>"; };
 		8F167E1F196C84C9002F21A1 /* BNRLoginDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRLoginDelegate.h; sourceTree = "<group>"; };
 		8F167E20196C84C9002F21A1 /* BNRLoginDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRLoginDelegate.m; sourceTree = "<group>"; };
+		8F167E22196CB22A002F21A1 /* BNRStoryDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRStoryDetailViewController.h; sourceTree = "<group>"; };
+		8F167E23196CB22A002F21A1 /* BNRStoryDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRStoryDetailViewController.m; sourceTree = "<group>"; };
 		C4BBB7B316FD2ABC003CA3F7 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		C4BBB7B416FD2ABC003CA3F7 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		C4BBB7B716FD2B0F003CA3F7 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
@@ -208,9 +208,9 @@
 				74366EDD158AB49300A17D8A /* DemoTableViewController.h */,
 				74366EDE158AB49300A17D8A /* DemoTableViewController.m */,
 				8F167E11196C6C1E002F21A1 /* BNRStoryListViewController.h */,
+				8F167E22196CB22A002F21A1 /* BNRStoryDetailViewController.h */,
+				8F167E23196CB22A002F21A1 /* BNRStoryDetailViewController.m */,
 				8F167E12196C6C1E002F21A1 /* BNRStoryListViewController.m */,
-				8F167E13196C6C1E002F21A1 /* BNRStoryDetailViewController.h */,
-				8F167E14196C6C1E002F21A1 /* BNRStoryDetailViewController.m */,
 				8F167E15196C6C1E002F21A1 /* BNRStory.h */,
 				8F167E16196C6C1E002F21A1 /* BNRStory.m */,
 				8F167E17196C6C1E002F21A1 /* Storyteller.storyboard */,
@@ -341,11 +341,11 @@
 			files = (
 				74366EB3158AAE1000A17D8A /* main.m in Sources */,
 				74366EB7158AAE1000A17D8A /* AppDelegate.m in Sources */,
-				8F167E19196C6C1E002F21A1 /* BNRStoryDetailViewController.m in Sources */,
 				8F167E21196C84C9002F21A1 /* BNRLoginDelegate.m in Sources */,
 				74366EDF158AB49300A17D8A /* DemoTableViewController.m in Sources */,
 				74366EE7158AC82C00A17D8A /* DefaultSettingsViewController.m in Sources */,
 				8F167E18196C6C1E002F21A1 /* BNRStoryListViewController.m in Sources */,
+				8F167E24196CB22A002F21A1 /* BNRStoryDetailViewController.m in Sources */,
 				74366EF4158AF2D300A17D8A /* PropertyConfigViewController.m in Sources */,
 				74366EFA158B95C800A17D8A /* SubclassConfigViewController.m in Sources */,
 				74366F03158B973C00A17D8A /* MyLogInViewController.m in Sources */,
