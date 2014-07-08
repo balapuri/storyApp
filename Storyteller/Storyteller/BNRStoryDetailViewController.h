@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "BNRStory.h"
 
-@interface BNRStoryDetailViewController : UIViewController
+@interface BNRStoryDetailViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic) BOOL existingStory;
 @property (nonatomic) BNRStory *storyDetail;

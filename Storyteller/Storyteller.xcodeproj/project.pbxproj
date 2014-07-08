@@ -12,7 +12,6 @@
 		8563C373196C588C00F99871 /* BNRStory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8563C372196C588C00F99871 /* BNRStory.m */; };
 		8563C376196C598300F99871 /* BNRStoryDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8563C375196C598300F99871 /* BNRStoryDetailViewController.m */; };
 		8F1C69F6196B8BB500BD9F0F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F1C69F5196B8BB500BD9F0F /* Foundation.framework */; };
-		8F1C69F8196B8BB500BD9F0F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F1C69F7196B8BB500BD9F0F /* CoreGraphics.framework */; };
 		8F1C69FA196B8BB500BD9F0F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F1C69F9196B8BB500BD9F0F /* UIKit.framework */; };
 		8F1C6A00196B8BB500BD9F0F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8F1C69FE196B8BB500BD9F0F /* InfoPlist.strings */; };
 		8F1C6A02196B8BB500BD9F0F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F1C6A01196B8BB500BD9F0F /* main.m */; };
@@ -45,7 +44,6 @@
 		8563C375196C598300F99871 /* BNRStoryDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRStoryDetailViewController.m; sourceTree = "<group>"; };
 		8F1C69F2196B8BB500BD9F0F /* Storyteller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Storyteller.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F1C69F5196B8BB500BD9F0F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		8F1C69F7196B8BB500BD9F0F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		8F1C69F9196B8BB500BD9F0F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8F1C69FD196B8BB500BD9F0F /* Storyteller-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Storyteller-Info.plist"; sourceTree = "<group>"; };
 		8F1C69FF196B8BB500BD9F0F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -66,7 +64,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F1C69F8196B8BB500BD9F0F /* CoreGraphics.framework in Frameworks */,
 				8F1C69FA196B8BB500BD9F0F /* UIKit.framework in Frameworks */,
 				8F1C69F6196B8BB500BD9F0F /* Foundation.framework in Frameworks */,
 			);
@@ -108,7 +105,6 @@
 			isa = PBXGroup;
 			children = (
 				8F1C69F5196B8BB500BD9F0F /* Foundation.framework */,
-				8F1C69F7196B8BB500BD9F0F /* CoreGraphics.framework */,
 				8F1C69F9196B8BB500BD9F0F /* UIKit.framework */,
 				8F1C6A0E196B8BB500BD9F0F /* XCTest.framework */,
 			);
@@ -122,9 +118,9 @@
 				8F1C6A05196B8BB500BD9F0F /* BNRAppDelegate.m */,
 				8563C36E196C568C00F99871 /* BNRStoryListViewController.h */,
 				8563C36F196C568C00F99871 /* BNRStoryListViewController.m */,
+				8563C371196C588C00F99871 /* BNRStory.h */,
 				8563C374196C598300F99871 /* BNRStoryDetailViewController.h */,
 				8563C375196C598300F99871 /* BNRStoryDetailViewController.m */,
-				8563C371196C588C00F99871 /* BNRStory.h */,
 				8563C372196C588C00F99871 /* BNRStory.m */,
 				8538168C196C550E00F7D35F /* Storyteller.storyboard */,
 				8F1C6A07196B8BB500BD9F0F /* Images.xcassets */,
@@ -380,6 +376,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Storyteller/Storyteller-Prefix.pch";
 				INFOPLIST_FILE = "Storyteller/Storyteller-Info.plist";
@@ -393,6 +393,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Storyteller/Storyteller-Prefix.pch";
 				INFOPLIST_FILE = "Storyteller/Storyteller-Info.plist";

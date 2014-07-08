@@ -7,6 +7,7 @@
 //
 
 #import "BNRAppDelegate.h"
+#import <Parse/Parse.h>
 
 @implementation BNRAppDelegate
 
