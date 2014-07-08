@@ -116,7 +116,7 @@
 
 - (IBAction)logOutButtonTapAction:(id)sender {
     [PFUser logOut];
-    [self.navigationController popViewControllerAnimated:YES];
+    [self viewDidAppear:YES];
 }
 
 @end
