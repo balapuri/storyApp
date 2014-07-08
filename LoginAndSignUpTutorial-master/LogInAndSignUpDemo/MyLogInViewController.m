@@ -44,14 +44,14 @@
 - (void)viewDidLayoutSubviews {
     [super viewDidLayoutSubviews];
     
-    [self.logInView.logInButton setFrame:CGRectMake(35.0f, 430.0f, 250.0f, 40.0f)];
+    [self.logInView.logInButton setFrame:CGRectMake(35.0f, 330.0f, 250.0f, 40.0f)];
     
-    [self.logInView.logo setFrame:CGRectMake(66.5f, 100.0f, 187.0f, 58.5f)];
+    [self.logInView.logo setFrame:CGRectMake(66.5f, 80.0f, 187.0f, 58.5f)];
     
-    [self.logInView.signUpButton setFrame:CGRectMake(35.0f, 485.0f, 250.0f, 40.0f)];
-    [self.logInView.usernameField setFrame:CGRectMake(35.0f, 245.0f, 250.0f, 50.0f)];
-    [self.logInView.passwordField setFrame:CGRectMake(35.0f, 295.0f, 250.0f, 50.0f)];
-    [self.fieldsBackground setFrame:CGRectMake(35.0f, 245.0f, 250.0f, 100.0f)];
+    [self.logInView.signUpButton setFrame:CGRectMake(35.0f, 385.0f, 250.0f, 40.0f)];
+    [self.logInView.usernameField setFrame:CGRectMake(35.0f, 145.0f, 250.0f, 50.0f)];
+    [self.logInView.passwordField setFrame:CGRectMake(35.0f, 195.0f, 250.0f, 50.0f)];
+    [self.fieldsBackground setFrame:CGRectMake(35.0f, 145.0f, 250.0f, 100.0f)];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {

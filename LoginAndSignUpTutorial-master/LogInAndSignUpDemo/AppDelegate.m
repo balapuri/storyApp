@@ -40,13 +40,13 @@
 //    }
     
     
-    self.window.rootViewController = [[SubclassConfigViewController alloc] init];
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
+//    self.window.rootViewController = [[SubclassConfigViewController alloc] init];
+//    self.window.backgroundColor = [UIColor whiteColor];
+//    [self.window makeKeyAndVisible];
     
     UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Storyteller" bundle:nil];
     UIViewController *initViewController = [storyBoard instantiateInitialViewController];
-//    [self.window setRootViewController:initViewController];
+   [self.window setRootViewController:initViewController];
     return YES;
 }
 
