@@ -7,6 +7,7 @@
 //
 
 #import "BNRStoryDetailViewController.h"
+#import "BNRAppDelegate.m"
 #import "BNRCheckUsersCellTableViewCell.h"
 
 @implementation BNRStoryDetailViewController
@@ -37,13 +38,25 @@
     UINib *nib = [UINib nibWithNibName:@"BNRUsersItemCellViewController" bundle:nil];
     
     //register this NIB, which contains the cell
-    [self.tableView registerNib:nib forCellReuseIdentifier:@"BNRUsersItemCellViewController"];
+    [self.chooseUsersTableView registerNib:nib forCellReuseIdentifier:@"BNRUsersItemCellViewController"];
 }
 
 - (NSArray *)grabUsers {
+    NSMutableArray *allUsers = [[NSMutableArray alloc] init];
+    
     PFQuery *query = [PFQuery queryWithClassName:@"User"];
-    [query whereKey:@"username"];
-    NSArray *allUsers = [query findObjects];
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if (!error) {
+            //the find was successful
+            NSLog(@"Successfuly retrieved %d users.", objects.count);
+            
+            for (PFObject *object in objects) {
+                [allUsers addObject:object];
+            }
+        } else {
+            NSLog(@"Error: %@ %@", error, [error userInfo]);
+        }
+    }];
     
     return allUsers;
 }
