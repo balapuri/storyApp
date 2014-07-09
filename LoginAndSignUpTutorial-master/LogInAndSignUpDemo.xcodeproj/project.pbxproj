@@ -24,7 +24,6 @@
 		74366EC7158AAF7E00A17D8A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74366EC1158AAF7E00A17D8A /* Security.framework */; };
 		74366EC8158AAF7E00A17D8A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74366EC2158AAF7E00A17D8A /* SystemConfiguration.framework */; };
 		74366ECA158AB00E00A17D8A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74366EC9158AB00E00A17D8A /* QuartzCore.framework */; };
-		74366EDF158AB49300A17D8A /* DemoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74366EDE158AB49300A17D8A /* DemoTableViewController.m */; };
 		74366EE7158AC82C00A17D8A /* DefaultSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74366EE5158AC82C00A17D8A /* DefaultSettingsViewController.m */; };
 		74366EE8158AC82C00A17D8A /* DefaultSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74366EE6158AC82C00A17D8A /* DefaultSettingsViewController.xib */; };
 		74366EF4158AF2D300A17D8A /* PropertyConfigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74366EF2158AF2D300A17D8A /* PropertyConfigViewController.m */; };
@@ -77,8 +76,6 @@
 		74366EC1158AAF7E00A17D8A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		74366EC2158AAF7E00A17D8A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		74366EC9158AB00E00A17D8A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		74366EDD158AB49300A17D8A /* DemoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoTableViewController.h; sourceTree = "<group>"; };
-		74366EDE158AB49300A17D8A /* DemoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoTableViewController.m; sourceTree = "<group>"; };
 		74366EE4158AC82C00A17D8A /* DefaultSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefaultSettingsViewController.h; sourceTree = "<group>"; };
 		74366EE5158AC82C00A17D8A /* DefaultSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefaultSettingsViewController.m; sourceTree = "<group>"; };
 		74366EE6158AC82C00A17D8A /* DefaultSettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DefaultSettingsViewController.xib; sourceTree = "<group>"; };
@@ -221,8 +218,6 @@
 				74366EB6158AAE1000A17D8A /* AppDelegate.m */,
 				8F167E1F196C84C9002F21A1 /* BNRLoginDelegate.h */,
 				8F167E20196C84C9002F21A1 /* BNRLoginDelegate.m */,
-				74366EDD158AB49300A17D8A /* DemoTableViewController.h */,
-				74366EDE158AB49300A17D8A /* DemoTableViewController.m */,
 				8F167E11196C6C1E002F21A1 /* BNRStoryListViewController.h */,
 				8F167E12196C6C1E002F21A1 /* BNRStoryListViewController.m */,
 				8F167E15196C6C1E002F21A1 /* BNRStory.h */,
@@ -359,7 +354,6 @@
 				74366EB3158AAE1000A17D8A /* main.m in Sources */,
 				74366EB7158AAE1000A17D8A /* AppDelegate.m in Sources */,
 				8F167E21196C84C9002F21A1 /* BNRLoginDelegate.m in Sources */,
-				74366EDF158AB49300A17D8A /* DemoTableViewController.m in Sources */,
 				74366EE7158AC82C00A17D8A /* DefaultSettingsViewController.m in Sources */,
 				8F167E18196C6C1E002F21A1 /* BNRStoryListViewController.m in Sources */,
 				74366EF4158AF2D300A17D8A /* PropertyConfigViewController.m in Sources */,
