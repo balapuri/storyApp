@@ -11,6 +11,8 @@
 		143C2CDF182058B900DFCD05 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 143C2CDE182058B900DFCD05 /* FacebookSDK.framework */; };
 		276A8074196C928300ACB05F /* AppName.png in Resources */ = {isa = PBXBuildFile; fileRef = 276A8072196C928300ACB05F /* AppName.png */; };
 		276A8075196C928300ACB05F /* LogInBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 276A8073196C928300ACB05F /* LogInBackground.png */; };
+		278300EA196DDF7A00E8B306 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 278300E8196DDF7A00E8B306 /* Icon.png */; };
+		278300EB196DDF7A00E8B306 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 278300E9196DDF7A00E8B306 /* Icon@2x.png */; };
 		74366EA7158AAE0F00A17D8A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74366EA6158AAE0F00A17D8A /* UIKit.framework */; };
 		74366EA9158AAE0F00A17D8A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74366EA8158AAE0F00A17D8A /* Foundation.framework */; };
 		74366EAB158AAE1000A17D8A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74366EAA158AAE0F00A17D8A /* CoreGraphics.framework */; };
@@ -53,8 +55,6 @@
 		C4BBB7C216FD2D73003CA3F7 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4BBB7BF16FD2D73003CA3F7 /* Default@2x.png */; };
 		C4BBB7C316FD2D73003CA3F7 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = C4BBB7C016FD2D73003CA3F7 /* Default.png */; };
 		C4BBB7C416FD2D73003CA3F7 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4BBB7C116FD2D73003CA3F7 /* Default-568h@2x.png */; };
-		C4FD613617286AC800F61563 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = C4FD613517286AC800F61563 /* Icon.png */; };
-		C4FD613817286ACD00F61563 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4FD613717286ACD00F61563 /* Icon@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,14 +62,16 @@
 		143C2CDE182058B900DFCD05 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		276A8072196C928300ACB05F /* AppName.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppName.png; sourceTree = "<group>"; };
 		276A8073196C928300ACB05F /* LogInBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LogInBackground.png; sourceTree = "<group>"; };
-		74366EA2158AAE0F00A17D8A /* LogInAndSignUpDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LogInAndSignUpDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		278300E8196DDF7A00E8B306 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		278300E9196DDF7A00E8B306 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		74366EA2158AAE0F00A17D8A /* StoryTeller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoryTeller.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74366EA6158AAE0F00A17D8A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		74366EA8158AAE0F00A17D8A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		74366EAA158AAE0F00A17D8A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		74366EAE158AAE1000A17D8A /* LogInAndSignUpDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LogInAndSignUpDemo-Info.plist"; sourceTree = "<group>"; };
+		74366EAE158AAE1000A17D8A /* StoryTeller-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StoryTeller-Info.plist"; sourceTree = "<group>"; };
 		74366EB0158AAE1000A17D8A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		74366EB2158AAE1000A17D8A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		74366EB4158AAE1000A17D8A /* LogInAndSignUpDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LogInAndSignUpDemo-Prefix.pch"; sourceTree = "<group>"; };
+		74366EB4158AAE1000A17D8A /* StoryTeller-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StoryTeller-Prefix.pch"; sourceTree = "<group>"; };
 		74366EB5158AAE1000A17D8A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		74366EB6158AAE1000A17D8A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		74366EBD158AAF7E00A17D8A /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -121,8 +123,6 @@
 		C4BBB7BF16FD2D73003CA3F7 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		C4BBB7C016FD2D73003CA3F7 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		C4BBB7C116FD2D73003CA3F7 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		C4FD613517286AC800F61563 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = ../Icon.png; sourceTree = "<group>"; };
-		C4FD613717286ACD00F61563 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "../Icon@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,10 +159,10 @@
 			children = (
 				276A8072196C928300ACB05F /* AppName.png */,
 				276A8073196C928300ACB05F /* LogInBackground.png */,
-				C4FD613517286AC800F61563 /* Icon.png */,
-				C4FD613717286ACD00F61563 /* Icon@2x.png */,
 				C4BBB7C016FD2D73003CA3F7 /* Default.png */,
 				C4BBB7BF16FD2D73003CA3F7 /* Default@2x.png */,
+				278300E8196DDF7A00E8B306 /* Icon.png */,
+				278300E9196DDF7A00E8B306 /* Icon@2x.png */,
 				C4BBB7C116FD2D73003CA3F7 /* Default-568h@2x.png */,
 			);
 			name = Assets;
@@ -188,7 +188,7 @@
 		74366EA3158AAE0F00A17D8A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				74366EA2158AAE0F00A17D8A /* LogInAndSignUpDemo.app */,
+				74366EA2158AAE0F00A17D8A /* StoryTeller.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -248,10 +248,10 @@
 		74366EAD158AAE1000A17D8A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				74366EAE158AAE1000A17D8A /* LogInAndSignUpDemo-Info.plist */,
+				74366EAE158AAE1000A17D8A /* StoryTeller-Info.plist */,
 				74366EAF158AAE1000A17D8A /* InfoPlist.strings */,
 				74366EB2158AAE1000A17D8A /* main.m */,
-				74366EB4158AAE1000A17D8A /* LogInAndSignUpDemo-Prefix.pch */,
+				74366EB4158AAE1000A17D8A /* StoryTeller-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			path = LogInAndSignUpDemo;
@@ -294,9 +294,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		74366EA1158AAE0F00A17D8A /* LogInAndSignUpDemo */ = {
+		74366EA1158AAE0F00A17D8A /* StoryTeller */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 74366EBA158AAE1000A17D8A /* Build configuration list for PBXNativeTarget "LogInAndSignUpDemo" */;
+			buildConfigurationList = 74366EBA158AAE1000A17D8A /* Build configuration list for PBXNativeTarget "StoryTeller" */;
 			buildPhases = (
 				74366E9E158AAE0F00A17D8A /* Sources */,
 				74366E9F158AAE0F00A17D8A /* Frameworks */,
@@ -306,9 +306,9 @@
 			);
 			dependencies = (
 			);
-			name = LogInAndSignUpDemo;
+			name = StoryTeller;
 			productName = LogInAndSignUpDemo;
-			productReference = 74366EA2158AAE0F00A17D8A /* LogInAndSignUpDemo.app */;
+			productReference = 74366EA2158AAE0F00A17D8A /* StoryTeller.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -319,7 +319,7 @@
 			attributes = {
 				LastUpgradeCheck = 0430;
 			};
-			buildConfigurationList = 74366E9C158AAE0F00A17D8A /* Build configuration list for PBXProject "LogInAndSignUpDemo" */;
+			buildConfigurationList = 74366E9C158AAE0F00A17D8A /* Build configuration list for PBXProject "StoryTeller" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -331,7 +331,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				74366EA1158AAE0F00A17D8A /* LogInAndSignUpDemo */,
+				74366EA1158AAE0F00A17D8A /* StoryTeller */,
 			);
 		};
 /* End PBXProject section */
@@ -342,6 +342,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F167E1B196C6C1E002F21A1 /* Storyteller.storyboard in Resources */,
+				278300EB196DDF7A00E8B306 /* Icon@2x.png in Resources */,
 				9DB0CA34196CBC4F003058B9 /* likeBtn.png in Resources */,
 				9DB0CA35196CBC4F003058B9 /* liked.png in Resources */,
 				276A8074196C928300ACB05F /* AppName.png in Resources */,
@@ -352,10 +353,9 @@
 				74366EFB158B95C800A17D8A /* SubclassConfigViewController.xib in Resources */,
 				C4BBB7C216FD2D73003CA3F7 /* Default@2x.png in Resources */,
 				C4BBB7C316FD2D73003CA3F7 /* Default.png in Resources */,
+				278300EA196DDF7A00E8B306 /* Icon.png in Resources */,
 				9DB0CA31196CBC3C003058B9 /* BNRCheckUsersCellTableViewCell.xib in Resources */,
 				C4BBB7C416FD2D73003CA3F7 /* Default-568h@2x.png in Resources */,
-				C4FD613617286AC800F61563 /* Icon.png in Resources */,
-				C4FD613817286ACD00F61563 /* Icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,14 +452,14 @@
 					/Users/fjm/git/SampleAppsPrivate/LoginAndSignUpTutorial,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "LogInAndSignUpDemo/LogInAndSignUpDemo-Prefix.pch";
-				INFOPLIST_FILE = "LogInAndSignUpDemo/LogInAndSignUpDemo-Info.plist";
+				GCC_PREFIX_HEADER = "LogInAndSignUpDemo/StoryTeller-Prefix.pch";
+				INFOPLIST_FILE = "LogInAndSignUpDemo/StoryTeller-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lsqlite3.0",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = StoryTeller;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -473,14 +473,14 @@
 					/Users/fjm/git/SampleAppsPrivate/LoginAndSignUpTutorial,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "LogInAndSignUpDemo/LogInAndSignUpDemo-Prefix.pch";
-				INFOPLIST_FILE = "LogInAndSignUpDemo/LogInAndSignUpDemo-Info.plist";
+				GCC_PREFIX_HEADER = "LogInAndSignUpDemo/StoryTeller-Prefix.pch";
+				INFOPLIST_FILE = "LogInAndSignUpDemo/StoryTeller-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lsqlite3.0",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = StoryTeller;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -488,7 +488,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		74366E9C158AAE0F00A17D8A /* Build configuration list for PBXProject "LogInAndSignUpDemo" */ = {
+		74366E9C158AAE0F00A17D8A /* Build configuration list for PBXProject "StoryTeller" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				74366EB8158AAE1000A17D8A /* Debug */,
@@ -497,7 +497,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		74366EBA158AAE1000A17D8A /* Build configuration list for PBXNativeTarget "LogInAndSignUpDemo" */ = {
+		74366EBA158AAE1000A17D8A /* Build configuration list for PBXNativeTarget "StoryTeller" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				74366EBB158AAE1000A17D8A /* Debug */,
