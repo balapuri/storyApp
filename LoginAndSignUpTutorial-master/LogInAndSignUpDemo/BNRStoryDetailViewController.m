@@ -7,7 +7,6 @@
 //
 
 #import "BNRStoryDetailViewController.h"
-#import "BNRAppDelegate.m"
 #import "BNRCheckUsersCellTableViewCell.h"
 
 @implementation BNRStoryDetailViewController
@@ -66,7 +65,7 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    BNRCheckUsersCellTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"BNRCheckUsersCellTableViewCell"];
+    BNRCheckUsersCellTableViewCell *cell = [_chooseUsersTableView dequeueReusableCellWithIdentifier:@"BNRCheckUsersCellTableViewCell"];
     
     BNRCheckUsersCellTableViewCell *item = [self grabUsers][indexPath.row];
     //question: what object is item? 

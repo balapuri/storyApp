@@ -37,7 +37,11 @@
 		8F167E1A196C6C1E002F21A1 /* BNRStory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F167E16196C6C1E002F21A1 /* BNRStory.m */; };
 		8F167E1B196C6C1E002F21A1 /* Storyteller.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F167E17196C6C1E002F21A1 /* Storyteller.storyboard */; };
 		8F167E21196C84C9002F21A1 /* BNRLoginDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F167E20196C84C9002F21A1 /* BNRLoginDelegate.m */; };
-		8F167E24196CB22A002F21A1 /* BNRStoryDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F167E23196CB22A002F21A1 /* BNRStoryDetailViewController.m */; };
+		9DB0CA30196CBC3C003058B9 /* BNRCheckUsersCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB0CA2E196CBC3C003058B9 /* BNRCheckUsersCellTableViewCell.m */; };
+		9DB0CA31196CBC3C003058B9 /* BNRCheckUsersCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DB0CA2F196CBC3C003058B9 /* BNRCheckUsersCellTableViewCell.xib */; };
+		9DB0CA34196CBC4F003058B9 /* likeBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DB0CA32196CBC4F003058B9 /* likeBtn.png */; };
+		9DB0CA35196CBC4F003058B9 /* liked.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DB0CA33196CBC4F003058B9 /* liked.png */; };
+		9DB0CA38196CBCFF003058B9 /* BNRStoryDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB0CA37196CBCFF003058B9 /* BNRStoryDetailViewController.m */; };
 		C4BBB7B516FD2ABC003CA3F7 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4BBB7B316FD2ABC003CA3F7 /* CoreLocation.framework */; };
 		C4BBB7B616FD2ABC003CA3F7 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4BBB7B416FD2ABC003CA3F7 /* StoreKit.framework */; };
 		C4BBB7BA16FD2B0F003CA3F7 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4BBB7B716FD2B0F003CA3F7 /* Accounts.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
@@ -95,8 +99,13 @@
 		8F167E17196C6C1E002F21A1 /* Storyteller.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyteller.storyboard; sourceTree = "<group>"; };
 		8F167E1F196C84C9002F21A1 /* BNRLoginDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRLoginDelegate.h; sourceTree = "<group>"; };
 		8F167E20196C84C9002F21A1 /* BNRLoginDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRLoginDelegate.m; sourceTree = "<group>"; };
-		8F167E22196CB22A002F21A1 /* BNRStoryDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRStoryDetailViewController.h; sourceTree = "<group>"; };
-		8F167E23196CB22A002F21A1 /* BNRStoryDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRStoryDetailViewController.m; sourceTree = "<group>"; };
+		9DB0CA2D196CBC3B003058B9 /* BNRCheckUsersCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRCheckUsersCellTableViewCell.h; sourceTree = "<group>"; };
+		9DB0CA2E196CBC3C003058B9 /* BNRCheckUsersCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRCheckUsersCellTableViewCell.m; sourceTree = "<group>"; };
+		9DB0CA2F196CBC3C003058B9 /* BNRCheckUsersCellTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BNRCheckUsersCellTableViewCell.xib; sourceTree = "<group>"; };
+		9DB0CA32196CBC4F003058B9 /* likeBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = likeBtn.png; sourceTree = "<group>"; };
+		9DB0CA33196CBC4F003058B9 /* liked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = liked.png; sourceTree = "<group>"; };
+		9DB0CA36196CBCD6003058B9 /* BNRStoryDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BNRStoryDetailViewController.h; sourceTree = "<group>"; };
+		9DB0CA37196CBCFF003058B9 /* BNRStoryDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRStoryDetailViewController.m; sourceTree = "<group>"; };
 		C4BBB7B316FD2ABC003CA3F7 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		C4BBB7B416FD2ABC003CA3F7 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		C4BBB7B716FD2B0F003CA3F7 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
@@ -157,11 +166,16 @@
 		74366E97158AAE0F00A17D8A = {
 			isa = PBXGroup;
 			children = (
+				9DB0CA2D196CBC3B003058B9 /* BNRCheckUsersCellTableViewCell.h */,
+				9DB0CA2E196CBC3C003058B9 /* BNRCheckUsersCellTableViewCell.m */,
+				9DB0CA2F196CBC3C003058B9 /* BNRCheckUsersCellTableViewCell.xib */,
 				74366EAC158AAE1000A17D8A /* LogInAndSignUpDemo */,
 				741203C415900A3C00820BE9 /* Assets */,
 				74366EAD158AAE1000A17D8A /* Supporting Files */,
 				74366EA5158AAE0F00A17D8A /* Frameworks */,
 				74366EA3158AAE0F00A17D8A /* Products */,
+				9DB0CA32196CBC4F003058B9 /* likeBtn.png */,
+				9DB0CA33196CBC4F003058B9 /* liked.png */,
 			);
 			sourceTree = "<group>";
 		};
@@ -201,6 +215,8 @@
 		74366EAC158AAE1000A17D8A /* LogInAndSignUpDemo */ = {
 			isa = PBXGroup;
 			children = (
+				9DB0CA37196CBCFF003058B9 /* BNRStoryDetailViewController.m */,
+				9DB0CA36196CBCD6003058B9 /* BNRStoryDetailViewController.h */,
 				74366EB5158AAE1000A17D8A /* AppDelegate.h */,
 				74366EB6158AAE1000A17D8A /* AppDelegate.m */,
 				8F167E1F196C84C9002F21A1 /* BNRLoginDelegate.h */,
@@ -208,8 +224,6 @@
 				74366EDD158AB49300A17D8A /* DemoTableViewController.h */,
 				74366EDE158AB49300A17D8A /* DemoTableViewController.m */,
 				8F167E11196C6C1E002F21A1 /* BNRStoryListViewController.h */,
-				8F167E22196CB22A002F21A1 /* BNRStoryDetailViewController.h */,
-				8F167E23196CB22A002F21A1 /* BNRStoryDetailViewController.m */,
 				8F167E12196C6C1E002F21A1 /* BNRStoryListViewController.m */,
 				8F167E15196C6C1E002F21A1 /* BNRStory.h */,
 				8F167E16196C6C1E002F21A1 /* BNRStory.m */,
@@ -318,6 +332,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F167E1B196C6C1E002F21A1 /* Storyteller.storyboard in Resources */,
+				9DB0CA34196CBC4F003058B9 /* likeBtn.png in Resources */,
+				9DB0CA35196CBC4F003058B9 /* liked.png in Resources */,
 				276A8074196C928300ACB05F /* AppName.png in Resources */,
 				74366EB1158AAE1000A17D8A /* InfoPlist.strings in Resources */,
 				276A8075196C928300ACB05F /* LogInBackground.png in Resources */,
@@ -326,6 +342,7 @@
 				74366EFB158B95C800A17D8A /* SubclassConfigViewController.xib in Resources */,
 				C4BBB7C216FD2D73003CA3F7 /* Default@2x.png in Resources */,
 				C4BBB7C316FD2D73003CA3F7 /* Default.png in Resources */,
+				9DB0CA31196CBC3C003058B9 /* BNRCheckUsersCellTableViewCell.xib in Resources */,
 				C4BBB7C416FD2D73003CA3F7 /* Default-568h@2x.png in Resources */,
 				C4FD613617286AC800F61563 /* Icon.png in Resources */,
 				C4FD613817286ACD00F61563 /* Icon@2x.png in Resources */,
@@ -345,12 +362,13 @@
 				74366EDF158AB49300A17D8A /* DemoTableViewController.m in Sources */,
 				74366EE7158AC82C00A17D8A /* DefaultSettingsViewController.m in Sources */,
 				8F167E18196C6C1E002F21A1 /* BNRStoryListViewController.m in Sources */,
-				8F167E24196CB22A002F21A1 /* BNRStoryDetailViewController.m in Sources */,
 				74366EF4158AF2D300A17D8A /* PropertyConfigViewController.m in Sources */,
 				74366EFA158B95C800A17D8A /* SubclassConfigViewController.m in Sources */,
 				74366F03158B973C00A17D8A /* MyLogInViewController.m in Sources */,
 				8F167E1A196C6C1E002F21A1 /* BNRStory.m in Sources */,
+				9DB0CA38196CBCFF003058B9 /* BNRStoryDetailViewController.m in Sources */,
 				74366F06158B975500A17D8A /* MySignUpViewController.m in Sources */,
+				9DB0CA30196CBC3C003058B9 /* BNRCheckUsersCellTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

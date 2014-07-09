@@ -8,7 +8,15 @@
 
 #import "BNRCheckUsersCellTableViewCell.h"
 
+@interface BNRCheckUsersCellTableViewCell ()
+
+@property (nonatomic) BOOL checked;
+
+@end
+
 @implementation BNRCheckUsersCellTableViewCell
+
+@synthesize checkButton;
 
 - (void)awakeFromNib
 {
@@ -20,6 +28,18 @@
     [super setSelected:selected animated:animated];
 
     // Configure the view for the selected state
+}
+
+- (IBAction)checkButton:(id)sender {
+    if (! _checked) {
+        [checkButton setImage:[UIImage imageNamed:@"liked.png"] forState:UIControlStateNormal];
+        _checked = YES;
+        
+    } else {
+        [checkButton setImage:[UIImage imageNamed:@"likeBtn.png"] forState:UIControlStateNormal];
+        _checked = NO;
+    }
+
 }
 
 @end

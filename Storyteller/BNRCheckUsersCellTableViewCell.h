@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface BNRCheckUsersCellTableViewCell : UITableViewCell
+- (IBAction)checkButton:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *checkButton;
+@property (weak, nonatomic) IBOutlet UILabel *usernameLabel;
 
 @end

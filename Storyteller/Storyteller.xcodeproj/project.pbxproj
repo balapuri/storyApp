@@ -22,6 +22,21 @@
 		8F1C6A11196B8BB500BD9F0F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F1C69F9196B8BB500BD9F0F /* UIKit.framework */; };
 		8F1C6A19196B8BB500BD9F0F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8F1C6A17196B8BB500BD9F0F /* InfoPlist.strings */; };
 		8F1C6A1B196B8BB500BD9F0F /* StorytellerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F1C6A1A196B8BB500BD9F0F /* StorytellerTests.m */; };
+		9DB0CA10196CA066003058B9 /* likeBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DB0CA0E196CA066003058B9 /* likeBtn.png */; };
+		9DB0CA11196CA066003058B9 /* liked.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DB0CA0F196CA066003058B9 /* liked.png */; };
+		9DB0CA15196CA658003058B9 /* BNRCheckUsersCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB0CA13196CA658003058B9 /* BNRCheckUsersCellTableViewCell.m */; };
+		9DB0CA16196CA658003058B9 /* BNRCheckUsersCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DB0CA14196CA658003058B9 /* BNRCheckUsersCellTableViewCell.xib */; };
+		9DB0CA18196CB324003058B9 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DB0CA17196CB324003058B9 /* Parse.framework */; };
+		9DB0CA1A196CB375003058B9 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DB0CA19196CB375003058B9 /* AudioToolbox.framework */; };
+		9DB0CA1C196CB384003058B9 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DB0CA1B196CB384003058B9 /* CFNetwork.framework */; };
+		9DB0CA1E196CB38E003058B9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DB0CA1D196CB38E003058B9 /* CoreGraphics.framework */; };
+		9DB0CA20196CB395003058B9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DB0CA1F196CB395003058B9 /* CoreLocation.framework */; };
+		9DB0CA22196CB39F003058B9 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DB0CA21196CB39F003058B9 /* libz.dylib */; };
+		9DB0CA24196CB3A8003058B9 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DB0CA23196CB3A8003058B9 /* MobileCoreServices.framework */; };
+		9DB0CA26196CB3B0003058B9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DB0CA25196CB3B0003058B9 /* QuartzCore.framework */; };
+		9DB0CA28196CB3BB003058B9 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DB0CA27196CB3BB003058B9 /* Security.framework */; };
+		9DB0CA2A196CB3C7003058B9 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DB0CA29196CB3C7003058B9 /* StoreKit.framework */; };
+		9DB0CA2C196CB3D1003058B9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DB0CA2B196CB3D1003058B9 /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +72,22 @@
 		8F1C6A16196B8BB500BD9F0F /* StorytellerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StorytellerTests-Info.plist"; sourceTree = "<group>"; };
 		8F1C6A18196B8BB500BD9F0F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8F1C6A1A196B8BB500BD9F0F /* StorytellerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StorytellerTests.m; sourceTree = "<group>"; };
+		9DB0CA0E196CA066003058B9 /* likeBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = likeBtn.png; sourceTree = "<group>"; };
+		9DB0CA0F196CA066003058B9 /* liked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = liked.png; sourceTree = "<group>"; };
+		9DB0CA12196CA658003058B9 /* BNRCheckUsersCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRCheckUsersCellTableViewCell.h; sourceTree = "<group>"; };
+		9DB0CA13196CA658003058B9 /* BNRCheckUsersCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRCheckUsersCellTableViewCell.m; sourceTree = "<group>"; };
+		9DB0CA14196CA658003058B9 /* BNRCheckUsersCellTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BNRCheckUsersCellTableViewCell.xib; sourceTree = "<group>"; };
+		9DB0CA17196CB324003058B9 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		9DB0CA19196CB375003058B9 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		9DB0CA1B196CB384003058B9 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		9DB0CA1D196CB38E003058B9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9DB0CA1F196CB395003058B9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		9DB0CA21196CB39F003058B9 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		9DB0CA23196CB3A8003058B9 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		9DB0CA25196CB3B0003058B9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		9DB0CA27196CB3BB003058B9 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		9DB0CA29196CB3C7003058B9 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		9DB0CA2B196CB3D1003058B9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +95,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DB0CA2C196CB3D1003058B9 /* SystemConfiguration.framework in Frameworks */,
+				9DB0CA2A196CB3C7003058B9 /* StoreKit.framework in Frameworks */,
+				9DB0CA28196CB3BB003058B9 /* Security.framework in Frameworks */,
+				9DB0CA26196CB3B0003058B9 /* QuartzCore.framework in Frameworks */,
+				9DB0CA24196CB3A8003058B9 /* MobileCoreServices.framework in Frameworks */,
+				9DB0CA22196CB39F003058B9 /* libz.dylib in Frameworks */,
+				9DB0CA20196CB395003058B9 /* CoreLocation.framework in Frameworks */,
+				9DB0CA1E196CB38E003058B9 /* CoreGraphics.framework in Frameworks */,
+				9DB0CA1C196CB384003058B9 /* CFNetwork.framework in Frameworks */,
+				9DB0CA1A196CB375003058B9 /* AudioToolbox.framework in Frameworks */,
 				8F1C69FA196B8BB500BD9F0F /* UIKit.framework in Frameworks */,
+				9DB0CA18196CB324003058B9 /* Parse.framework in Frameworks */,
 				8F1C69F6196B8BB500BD9F0F /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -85,10 +127,15 @@
 		8F1C69E9196B8BB500BD9F0F = {
 			isa = PBXGroup;
 			children = (
+				9DB0CA12196CA658003058B9 /* BNRCheckUsersCellTableViewCell.h */,
+				9DB0CA13196CA658003058B9 /* BNRCheckUsersCellTableViewCell.m */,
+				9DB0CA14196CA658003058B9 /* BNRCheckUsersCellTableViewCell.xib */,
 				8F1C69FB196B8BB500BD9F0F /* Storyteller */,
 				8F1C6A14196B8BB500BD9F0F /* StorytellerTests */,
 				8F1C69F4196B8BB500BD9F0F /* Frameworks */,
 				8F1C69F3196B8BB500BD9F0F /* Products */,
+				9DB0CA0E196CA066003058B9 /* likeBtn.png */,
+				9DB0CA0F196CA066003058B9 /* liked.png */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,6 +151,17 @@
 		8F1C69F4196B8BB500BD9F0F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9DB0CA2B196CB3D1003058B9 /* SystemConfiguration.framework */,
+				9DB0CA29196CB3C7003058B9 /* StoreKit.framework */,
+				9DB0CA27196CB3BB003058B9 /* Security.framework */,
+				9DB0CA25196CB3B0003058B9 /* QuartzCore.framework */,
+				9DB0CA23196CB3A8003058B9 /* MobileCoreServices.framework */,
+				9DB0CA21196CB39F003058B9 /* libz.dylib */,
+				9DB0CA1F196CB395003058B9 /* CoreLocation.framework */,
+				9DB0CA1D196CB38E003058B9 /* CoreGraphics.framework */,
+				9DB0CA1B196CB384003058B9 /* CFNetwork.framework */,
+				9DB0CA19196CB375003058B9 /* AudioToolbox.framework */,
+				9DB0CA17196CB324003058B9 /* Parse.framework */,
 				8F1C69F5196B8BB500BD9F0F /* Foundation.framework */,
 				8F1C69F9196B8BB500BD9F0F /* UIKit.framework */,
 				8F1C6A0E196B8BB500BD9F0F /* XCTest.framework */,
@@ -237,6 +295,9 @@
 				8F1C6A00196B8BB500BD9F0F /* InfoPlist.strings in Resources */,
 				8F1C6A08196B8BB500BD9F0F /* Images.xcassets in Resources */,
 				8538168D196C550E00F7D35F /* Storyteller.storyboard in Resources */,
+				9DB0CA10196CA066003058B9 /* likeBtn.png in Resources */,
+				9DB0CA16196CA658003058B9 /* BNRCheckUsersCellTableViewCell.xib in Resources */,
+				9DB0CA11196CA066003058B9 /* liked.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +317,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8563C373196C588C00F99871 /* BNRStory.m in Sources */,
+				9DB0CA15196CA658003058B9 /* BNRCheckUsersCellTableViewCell.m in Sources */,
 				8F1C6A02196B8BB500BD9F0F /* main.m in Sources */,
 				8563C376196C598300F99871 /* BNRStoryDetailViewController.m in Sources */,
 				8563C370196C568C00F99871 /* BNRStoryListViewController.m in Sources */,
