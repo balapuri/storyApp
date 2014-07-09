@@ -64,8 +64,10 @@
     UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"UITableViewCell"];
     NSArray *stories = [[BNRStoryStore sharedStore] allStories];
     BNRStory *story = stories[indexPath.row];
-    cell.textLabel.text = [story name];
+    cell.textLabel.text = story.name;
     return cell;
+    
+   // PFQuery *query
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath;

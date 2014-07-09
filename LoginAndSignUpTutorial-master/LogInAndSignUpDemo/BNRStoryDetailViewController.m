@@ -27,6 +27,8 @@
     self.storyDetail.image = self.imageView.image;
     [self.presentingViewController dismissViewControllerAnimated:YES completion:NULL];
     
+    self.storyDetail.storyText = self.textView.text;
+    
     //when the DONE button is clicked
     PFObject *story = [PFObject objectWithClassName:@"Conversation"];
     story[@"originTeller"] = [PFUser currentUser][@"username"];
@@ -54,6 +56,8 @@
     [self.chooseUsersTableView registerNib:nib forCellReuseIdentifier:@"BNRUsersItemCellViewController"];
     
     self.imageView.image = self.storyDetail.image;
+    
+    self.textView.text = self.storyDetail.storyText;
 }
 
 - (NSArray *)grabUsers {
@@ -89,6 +93,11 @@
     cell.usernameLabel.text = NSStringFromClass([item class]);
     
     return cell; 
+}
+
+- (IBAction)saveText:(id)sender {
+    NSString *txt = self.textView.text;
+    self.storyDetail.storyText = txt;
 }
 
 - (IBAction)takePicture:(id)sender {
@@ -158,6 +167,11 @@
     } else {
         self.imageView.image = story.image;
     }
+    if (!story.storyText) {
+        self.textView.text = @"";
+    } else {
+        self.textView.text = story.storyText;
+    }
 }
 
 - (void)viewWillDisppear:(BOOL)animated
@@ -166,6 +180,10 @@
     BNRStory *story = self.storyDetail;
     if (!self.imageView.image) {
         story.image = self.imageView.image;
+    }
+    
+    if (!self.textView.text) {
+        story.storyText = self.textView.text;
     }
 }
 

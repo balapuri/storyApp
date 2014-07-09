@@ -38,6 +38,11 @@
     
     BNRStory *newStory = [[BNRStoryStore sharedStore] createStory];
     newStory.name = self.chooseTitle.text;
+    NSArray *m = [[BNRStoryStore sharedStore] allStories];
+    for (BNRStory *s in m) {
+        NSLog(@"story %@", s.name);
+    }
+    
 }
 
 ///* Protocol methods */
