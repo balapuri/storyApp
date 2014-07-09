@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>E6CC3AD1-E55B-4608-8486-B7E3734E13E9</string>
+	<key>IDESourceControlProjectName</key>
+	<string>LogInAndSignUpDemo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>CB1784A0-8554-48CD-AC22-FA4E17583CDE</key>
+		<string>https://github.com/balapuri/storyApp</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>LoginAndSignUpTutorial-master/LogInAndSignUpDemo.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>CB1784A0-8554-48CD-AC22-FA4E17583CDE</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/balapuri/storyApp</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>CB1784A0-8554-48CD-AC22-FA4E17583CDE</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CB1784A0-8554-48CD-AC22-FA4E17583CDE</string>
+			<key>IDESourceControlWCCName</key>
+			<string>storyApp</string>
+		</dict>
+	</array>
+</dict>
+</plist>
