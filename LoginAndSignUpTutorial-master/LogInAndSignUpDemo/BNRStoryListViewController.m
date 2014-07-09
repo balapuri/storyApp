@@ -86,12 +86,6 @@
 {
     if (!_currentStories) {
         _currentStories = [NSMutableArray array];
-        BNRStory *story = [[BNRStory alloc] init];
-        story.name = @"Story1";
-        [_currentStories addObject:story];
-        story = [[BNRStory alloc] init];
-        story.name = @"Story2";
-        [_currentStories addObject:story];
     }
     return _currentStories;
 }
