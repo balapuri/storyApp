@@ -23,7 +23,6 @@
 
 - (void)viewWillAppear:(BOOL)animated
 {
-    NSLog(@"%@ this is 2it", [PFUser currentUser]);
     [super viewWillAppear:animated];
     
     [self.tableView reloadData];
@@ -33,7 +32,6 @@
     [super viewDidLoad];
 
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"UITableViewCell"];
-    NSLog(@"%@ this is it", [PFUser currentUser]);
     if (![PFUser currentUser]) { // No user logged in
         // Customize the Log In View Controller
         MyLogInViewController *logInViewController = [[MyLogInViewController alloc] init];

@@ -25,8 +25,11 @@
     [self.presentingViewController dismissViewControllerAnimated:YES completion:NULL];
     
     //when the DONE button is clicked
-    //PFObject *story = [PFObject objectWithClassName:@"Conversation"];
-    //story[@"originTeller"] = [PFObject currentUser];
+    PFObject *story = [PFObject objectWithClassName:@"Conversation"];
+    story[@"originTeller"] = [PFUser currentUser][@"username"];
+    NSLog(@"originteller: %@", story[@"originTeller"]);
+    story[@"title"] = @"Maya's story";
+    [story saveInBackground];
     //story[@"tellers"] = ;
     
 }
@@ -104,7 +107,35 @@
 }
 
 - (void)uploadImage:(NSData *)imageData {
-    
+    PFFile *imageFile = [PFFile fileWithName:@"Image.jpg" data:imageData];
+    [imageFile saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+        if (!error) {
+            // Hide old HUD, show completed HUD (see example for code)
+            
+            // Create a PFObject around a PFFile and associate it with the current user
+            PFObject *userPhoto = [PFObject objectWithClassName:@"UserPhoto"];
+            [userPhoto setObject:imageFile forKey:@"imageFile"];
+            
+            // Set the access control list to current user for security purposes
+            userPhoto.ACL = [PFACL ACLWithUser:[PFUser currentUser]];
+            
+            PFUser *user = [PFUser currentUser];
+            [userPhoto setObject:user forKey:@"user"];
+            
+            [userPhoto saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+                if (!error) {
+                }
+                else{
+                    // Log details of the failure
+                    NSLog(@"Error: %@ %@", error, [error userInfo]);
+                }
+            }];
+        }
+        else{
+            // Log details of the failure
+            NSLog(@"Error: %@ %@", error, [error userInfo]);
+        }
+    }];
 }
 
 
