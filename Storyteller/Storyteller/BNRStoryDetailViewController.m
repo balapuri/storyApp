@@ -10,11 +10,14 @@
 #import "BNRAppDelegate.m"
 #import "BNRCheckUsersCellTableViewCell.h"
 
+<<<<<<< HEAD
 @interface BNRStoryDetailViewController ()
 
 
 @end
 
+=======
+>>>>>>> 4c4c052f3efe4fa1b4aa1f63aa72cbe2a0f1e7c5
 @implementation BNRStoryDetailViewController
 
 
@@ -81,6 +84,7 @@
     return cell; 
 }
 
+<<<<<<< HEAD
 - (IBAction)takePicture:(id)sender {
     UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
     if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
@@ -99,4 +103,6 @@
     [self dismissViewControllerAnimated:YES completion:NULL];
 }
 
+=======
+>>>>>>> 4c4c052f3efe4fa1b4aa1f63aa72cbe2a0f1e7c5
 @end
