@@ -16,8 +16,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "74366EA1158AAE0F00A17D8A"
                BuildableName = "LogInAndSignUpDemo.app"
-               BlueprintName = "LogInAndSignUpDemo"
-               ReferencedContainer = "container:LogInAndSignUpDemo.xcodeproj">
+               BlueprintName = "StoryTeller"
+               ReferencedContainer = "container:StoryTeller.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -34,8 +34,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "74366EA1158AAE0F00A17D8A"
             BuildableName = "LogInAndSignUpDemo.app"
-            BlueprintName = "LogInAndSignUpDemo"
-            ReferencedContainer = "container:LogInAndSignUpDemo.xcodeproj">
+            BlueprintName = "StoryTeller"
+            ReferencedContainer = "container:StoryTeller.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -53,8 +53,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "74366EA1158AAE0F00A17D8A"
             BuildableName = "LogInAndSignUpDemo.app"
-            BlueprintName = "LogInAndSignUpDemo"
-            ReferencedContainer = "container:LogInAndSignUpDemo.xcodeproj">
+            BlueprintName = "StoryTeller"
+            ReferencedContainer = "container:StoryTeller.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -71,8 +71,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "74366EA1158AAE0F00A17D8A"
             BuildableName = "LogInAndSignUpDemo.app"
-            BlueprintName = "LogInAndSignUpDemo"
-            ReferencedContainer = "container:LogInAndSignUpDemo.xcodeproj">
+            BlueprintName = "StoryTeller"
+            ReferencedContainer = "container:StoryTeller.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
