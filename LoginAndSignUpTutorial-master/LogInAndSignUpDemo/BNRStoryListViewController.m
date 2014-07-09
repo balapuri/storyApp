@@ -63,7 +63,12 @@
 {
     UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"UITableViewCell"];
     NSArray *stories = [[BNRStoryStore sharedStore] allStories];
-    BNRStory *story = stories[indexPath.row];
+    BNRStory *story;
+    if (stories.count > indexPath.row) {
+        story = stories[indexPath.row];
+    } else {
+        story = [[BNRStoryStore sharedStore] createStory];
+    }
     cell.textLabel.text = story.name;
     return cell;
     

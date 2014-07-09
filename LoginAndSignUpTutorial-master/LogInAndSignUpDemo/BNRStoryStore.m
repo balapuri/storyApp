@@ -45,11 +45,6 @@
     self = [super init];
     if (self) {
         _privateStories = [[NSMutableArray alloc] init];
-        [self createStory];
-        [self createStory];
-        [self createStory];
-        [self createStory];
-        [self createStory];
     }
     return self;
 }

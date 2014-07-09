@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "74366EA1158AAE0F00A17D8A"
-            BuildableName = "LogInAndSignUpDemo.app"
-            BlueprintName = "LogInAndSignUpDemo"
-            ReferencedContainer = "container:LogInAndSignUpDemo.xcodeproj">
+            BuildableName = "StoryTeller.app"
+            BlueprintName = "StoryTeller"
+            ReferencedContainer = "container:StoryTeller.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -52,9 +52,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "74366EA1158AAE0F00A17D8A"
-            BuildableName = "LogInAndSignUpDemo.app"
-            BlueprintName = "LogInAndSignUpDemo"
-            ReferencedContainer = "container:LogInAndSignUpDemo.xcodeproj">
+            BuildableName = "StoryTeller.app"
+            BlueprintName = "StoryTeller"
+            ReferencedContainer = "container:StoryTeller.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
