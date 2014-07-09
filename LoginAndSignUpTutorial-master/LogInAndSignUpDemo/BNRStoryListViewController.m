@@ -11,6 +11,8 @@
 #import "BNRStoryDetailViewController.h"
 #import "MyLogInViewController.h"
 #import "MySignUpViewController.h"
+#import "BNRStoryStore.h"
+#import "BNRNewStoryViewController.h"
 
 @interface BNRStoryListViewController ()
 
@@ -57,19 +59,21 @@
 }
 
 
-//- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-//{
-//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"UITableViewCell"];
-//    BNRStory *story = self.currentStories[indexPath.row];
-//    cell.textLabel.text = story.name;
-//    if (cell) {
-//        return cell;
-//    } else {
-//        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"UITableViewCell"];
-//        return cell;
-//    }
-//}
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"UITableViewCell"];
+    NSArray *stories = [[BNRStoryStore sharedStore] allStories];
+    BNRStory *story = stories[indexPath.row];
+    cell.textLabel.text = [story name];
+    return cell;
+}
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath;
+{
+    NSArray *stories = [[BNRStoryStore sharedStore] allStories];
+    BNRStory *story = stories[indexPath.row];
+    [self performSegueWithIdentifier:@"ExistingStory" sender:story];
+}
 
 - (NSMutableArray *)currentStories
 {
@@ -88,15 +92,15 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([segue.identifier isEqualToString:@"NewStory"]) {
-        BNRStory *story = [[BNRStory alloc] init];
+        BNRStory *story = sender;
         [self.currentStories addObject:story];
         UINavigationController *nc = (UINavigationController *)segue.destinationViewController;
-        BNRStoryDetailViewController *svc = (BNRStoryDetailViewController *)[nc topViewController];
+        BNRNewStoryViewController *svc = (BNRNewStoryViewController *)[nc topViewController];
         svc.storyDetail = story;
     } else if ([segue.identifier isEqualToString:@"ExistingStory"]) {
         NSIndexPath *ip = [self.tableView indexPathForCell:sender];
         BNRStory *story = self.currentStories[ip.row];
-        BNRStoryDetailViewController *svc = (BNRStoryDetailViewController *)segue.destinationViewController;
+        BNRNewStoryViewController *svc = (BNRNewStoryViewController *)segue.destinationViewController;
         svc.storyDetail = story;
         svc.existingStory = YES;
     }

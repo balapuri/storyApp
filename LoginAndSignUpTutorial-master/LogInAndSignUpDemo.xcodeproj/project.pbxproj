@@ -32,10 +32,13 @@
 		74366EFB158B95C800A17D8A /* SubclassConfigViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74366EF9158B95C800A17D8A /* SubclassConfigViewController.xib */; };
 		74366F03158B973C00A17D8A /* MyLogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74366F02158B973C00A17D8A /* MyLogInViewController.m */; };
 		74366F06158B975500A17D8A /* MySignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74366F05158B975500A17D8A /* MySignUpViewController.m */; };
+		859DD665196DB1D7006E1813 /* BNRImageStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 859DD664196DB1D7006E1813 /* BNRImageStore.m */; };
+		859DD670196DB8CB006E1813 /* BNRStoryStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 859DD66F196DB8CB006E1813 /* BNRStoryStore.m */; };
 		8F167E18196C6C1E002F21A1 /* BNRStoryListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F167E12196C6C1E002F21A1 /* BNRStoryListViewController.m */; };
 		8F167E1A196C6C1E002F21A1 /* BNRStory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F167E16196C6C1E002F21A1 /* BNRStory.m */; };
 		8F167E1B196C6C1E002F21A1 /* Storyteller.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F167E17196C6C1E002F21A1 /* Storyteller.storyboard */; };
 		8F167E21196C84C9002F21A1 /* BNRLoginDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F167E20196C84C9002F21A1 /* BNRLoginDelegate.m */; };
+		8F167E27196DE7F4002F21A1 /* BNRNewStoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F167E26196DE7F4002F21A1 /* BNRNewStoryViewController.m */; };
 		9DB0CA30196CBC3C003058B9 /* BNRCheckUsersCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB0CA2E196CBC3C003058B9 /* BNRCheckUsersCellTableViewCell.m */; };
 		9DB0CA31196CBC3C003058B9 /* BNRCheckUsersCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DB0CA2F196CBC3C003058B9 /* BNRCheckUsersCellTableViewCell.xib */; };
 		9DB0CA34196CBC4F003058B9 /* likeBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DB0CA32196CBC4F003058B9 /* likeBtn.png */; };
@@ -89,6 +92,10 @@
 		74366F02158B973C00A17D8A /* MyLogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLogInViewController.m; sourceTree = "<group>"; };
 		74366F04158B975500A17D8A /* MySignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySignUpViewController.h; sourceTree = "<group>"; };
 		74366F05158B975500A17D8A /* MySignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySignUpViewController.m; sourceTree = "<group>"; };
+		859DD663196DB1D7006E1813 /* BNRImageStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRImageStore.h; sourceTree = "<group>"; };
+		859DD664196DB1D7006E1813 /* BNRImageStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRImageStore.m; sourceTree = "<group>"; };
+		859DD66E196DB8CB006E1813 /* BNRStoryStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRStoryStore.h; sourceTree = "<group>"; };
+		859DD66F196DB8CB006E1813 /* BNRStoryStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRStoryStore.m; sourceTree = "<group>"; };
 		8F167E11196C6C1E002F21A1 /* BNRStoryListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRStoryListViewController.h; sourceTree = "<group>"; };
 		8F167E12196C6C1E002F21A1 /* BNRStoryListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRStoryListViewController.m; sourceTree = "<group>"; };
 		8F167E15196C6C1E002F21A1 /* BNRStory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRStory.h; sourceTree = "<group>"; };
@@ -96,6 +103,8 @@
 		8F167E17196C6C1E002F21A1 /* Storyteller.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyteller.storyboard; sourceTree = "<group>"; };
 		8F167E1F196C84C9002F21A1 /* BNRLoginDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRLoginDelegate.h; sourceTree = "<group>"; };
 		8F167E20196C84C9002F21A1 /* BNRLoginDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRLoginDelegate.m; sourceTree = "<group>"; };
+		8F167E25196DE7F4002F21A1 /* BNRNewStoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRNewStoryViewController.h; sourceTree = "<group>"; };
+		8F167E26196DE7F4002F21A1 /* BNRNewStoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRNewStoryViewController.m; sourceTree = "<group>"; };
 		9DB0CA2D196CBC3B003058B9 /* BNRCheckUsersCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRCheckUsersCellTableViewCell.h; sourceTree = "<group>"; };
 		9DB0CA2E196CBC3C003058B9 /* BNRCheckUsersCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRCheckUsersCellTableViewCell.m; sourceTree = "<group>"; };
 		9DB0CA2F196CBC3C003058B9 /* BNRCheckUsersCellTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BNRCheckUsersCellTableViewCell.xib; sourceTree = "<group>"; };
@@ -212,16 +221,22 @@
 		74366EAC158AAE1000A17D8A /* LogInAndSignUpDemo */ = {
 			isa = PBXGroup;
 			children = (
-				9DB0CA37196CBCFF003058B9 /* BNRStoryDetailViewController.m */,
 				9DB0CA36196CBCD6003058B9 /* BNRStoryDetailViewController.h */,
+				9DB0CA37196CBCFF003058B9 /* BNRStoryDetailViewController.m */,
 				74366EB5158AAE1000A17D8A /* AppDelegate.h */,
 				74366EB6158AAE1000A17D8A /* AppDelegate.m */,
 				8F167E1F196C84C9002F21A1 /* BNRLoginDelegate.h */,
 				8F167E20196C84C9002F21A1 /* BNRLoginDelegate.m */,
 				8F167E11196C6C1E002F21A1 /* BNRStoryListViewController.h */,
+				8F167E25196DE7F4002F21A1 /* BNRNewStoryViewController.h */,
+				8F167E26196DE7F4002F21A1 /* BNRNewStoryViewController.m */,
 				8F167E12196C6C1E002F21A1 /* BNRStoryListViewController.m */,
 				8F167E15196C6C1E002F21A1 /* BNRStory.h */,
 				8F167E16196C6C1E002F21A1 /* BNRStory.m */,
+				859DD66E196DB8CB006E1813 /* BNRStoryStore.h */,
+				859DD66F196DB8CB006E1813 /* BNRStoryStore.m */,
+				859DD663196DB1D7006E1813 /* BNRImageStore.h */,
+				859DD664196DB1D7006E1813 /* BNRImageStore.m */,
 				8F167E17196C6C1E002F21A1 /* Storyteller.storyboard */,
 				74366EEF158AF29000A17D8A /* Default Settings */,
 				74366EF0158AF29A00A17D8A /* Property Customization */,
@@ -351,10 +366,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F167E27196DE7F4002F21A1 /* BNRNewStoryViewController.m in Sources */,
 				74366EB3158AAE1000A17D8A /* main.m in Sources */,
 				74366EB7158AAE1000A17D8A /* AppDelegate.m in Sources */,
 				8F167E21196C84C9002F21A1 /* BNRLoginDelegate.m in Sources */,
 				74366EE7158AC82C00A17D8A /* DefaultSettingsViewController.m in Sources */,
+				859DD670196DB8CB006E1813 /* BNRStoryStore.m in Sources */,
 				8F167E18196C6C1E002F21A1 /* BNRStoryListViewController.m in Sources */,
 				74366EF4158AF2D300A17D8A /* PropertyConfigViewController.m in Sources */,
 				74366EFA158B95C800A17D8A /* SubclassConfigViewController.m in Sources */,
@@ -363,6 +380,7 @@
 				9DB0CA38196CBCFF003058B9 /* BNRStoryDetailViewController.m in Sources */,
 				74366F06158B975500A17D8A /* MySignUpViewController.m in Sources */,
 				9DB0CA30196CBC3C003058B9 /* BNRCheckUsersCellTableViewCell.m in Sources */,
+				859DD665196DB1D7006E1813 /* BNRImageStore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
