@@ -99,6 +99,13 @@
     UIImage *image = info[UIImagePickerControllerOriginalImage];
     self.imageView.image = image;
     [self dismissViewControllerAnimated:YES completion:NULL];
+    NSData *imageData = UIImageJPEGRepresentation(image, 0.05f);
+    [self uploadImage:imageData];
 }
+
+- (void)uploadImage:(NSData *)imageData {
+    
+}
+
 
 @end
