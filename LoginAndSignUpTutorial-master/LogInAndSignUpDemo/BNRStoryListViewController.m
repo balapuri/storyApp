@@ -31,10 +31,8 @@
 
 - (void)viewDidLoad:(BOOL)animated {
     [super viewDidLoad];
-<<<<<<< HEAD
-=======
+
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"UITableViewCell"];
->>>>>>> 4c4c052f3efe4fa1b4aa1f63aa72cbe2a0f1e7c5
     NSLog(@"%@ this is it", [PFUser currentUser]);
     if (![PFUser currentUser]) { // No user logged in
         // Customize the Log In View Controller
@@ -52,10 +50,7 @@
         // Present Log In View Controller
         [self presentViewController:logInViewController animated:YES completion:NULL];
     }
-<<<<<<< HEAD
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"UITableViewCell"];
-=======
->>>>>>> 4c4c052f3efe4fa1b4aa1f63aa72cbe2a0f1e7c5
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -63,7 +58,7 @@
     return [self.currentStories count];
 }
 
-<<<<<<< HEAD
+
 //- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 //{
 //    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"UITableViewCell"];
@@ -76,33 +71,17 @@
 //        return cell;
 //    }
 //}
-=======
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"UITableViewCell"];
-    BNRStory *story = self.currentStories[indexPath.row];
-    cell.textLabel.text = story.name;
-    if (cell) {
-        return cell;
-    } else {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"UITableViewCell"];
-        return cell;
-    }
-}
->>>>>>> 4c4c052f3efe4fa1b4aa1f63aa72cbe2a0f1e7c5
+
 
 - (NSMutableArray *)currentStories
 {
     if (!_currentStories) {
         _currentStories = [NSMutableArray array];
         BNRStory *story = [[BNRStory alloc] init];
-<<<<<<< HEAD
         story.name = @"Story1";
         [_currentStories addObject:story];
         story = [[BNRStory alloc] init];
         story.name = @"Story2";
-=======
->>>>>>> 4c4c052f3efe4fa1b4aa1f63aa72cbe2a0f1e7c5
         [_currentStories addObject:story];
     }
     return _currentStories;
