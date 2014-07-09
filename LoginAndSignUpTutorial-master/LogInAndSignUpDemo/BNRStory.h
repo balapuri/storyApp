@@ -12,5 +12,8 @@
 
 @property (nonatomic, copy) NSString *name;
 @property (nonatomic) NSMutableArray *players;
+@property (nonatomic) UIImage *image;
+@property (nonatomic) NSMutableArray *detail;
+@property (nonatomic) double orderingValue;
 
 @end

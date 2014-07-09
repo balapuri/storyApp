@@ -8,11 +8,13 @@
 
 #import "BNRStoryDetailViewController.h"
 #import "BNRCheckUsersCellTableViewCell.h"
+#import "BNRImageStore.h"
 
 @interface BNRStoryDetailViewController ()
 
 @property (weak, nonatomic) IBOutlet UIToolbar *toolBar;
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
+@property (weak, nonatomic) IBOutlet UITextView *textView;
 
 
 @end
@@ -22,6 +24,7 @@
 
 - (IBAction)dismiss:(id)sender
 {
+    self.storyDetail.image = self.imageView.image;
     [self.presentingViewController dismissViewControllerAnimated:YES completion:NULL];
     
     //when the DONE button is clicked
@@ -46,6 +49,8 @@
     
     //register this NIB, which contains the cell
     [self.chooseUsersTableView registerNib:nib forCellReuseIdentifier:@"BNRUsersItemCellViewController"];
+    
+    self.imageView.image = self.storyDetail.image;
 }
 
 - (NSArray *)grabUsers {
@@ -97,7 +102,9 @@
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
     UIImage *image = info[UIImagePickerControllerOriginalImage];
+    [[BNRImageStore sharedStore] setImage:image forKey:self.storyDetail.name];
     self.imageView.image = image;
+    self.storyDetail.image = image;
     [self dismissViewControllerAnimated:YES completion:NULL];
     NSData *imageData = UIImageJPEGRepresentation(image, 0.05f);
     [self uploadImage:imageData];
@@ -107,5 +114,28 @@
     
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    BNRStory *story = self.storyDetail;
+    if (!story) {
+        self.storyDetail = [[BNRStory alloc] init];
+        story = self.storyDetail;
+    }
+    if (!story.image) {
+        self.imageView.image = [[UIImage alloc] init];
+    } else {
+        self.imageView.image = story.image;
+    }
+}
+
+- (void)viewWillDisppear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    BNRStory *story = self.storyDetail;
+    if (!self.imageView.image) {
+        story.image = self.imageView.image;
+    }
+}
 
 @end
