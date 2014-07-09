@@ -57,6 +57,7 @@
 - (BNRStory *)createStory
 {
     BNRStory *story = [[BNRStory alloc] init];
+    story.newStory = NO;
     
     [self.privateStories addObject:story];
     

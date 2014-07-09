@@ -10,14 +10,4 @@
 
 @implementation BNRStory
 
-//- (NSString *)name
-//{
-//    if (!_name) {
-//        _name = [NSString stringWithFormat:@"Ronnie %d", rand()];
-//    }
-//    return _name;
-//}
-
-
-
 @end

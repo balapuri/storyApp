@@ -16,7 +16,6 @@
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @property (weak, nonatomic) IBOutlet UITextView *textView;
 
-
 @end
 
 @implementation BNRStoryDetailViewController
@@ -54,10 +53,14 @@
     
     //register this NIB, which contains the cell
     [self.chooseUsersTableView registerNib:nib forCellReuseIdentifier:@"BNRUsersItemCellViewController"];
-    
-    self.imageView.image = self.storyDetail.image;
-    
-    self.textView.text = self.storyDetail.storyText;
+
+    if (self.storyDetail.newStory) {
+        self.textView.text = self.storyDetail.storyText;
+        self.imageView.image = self.storyDetail.image;
+    } else {
+        self.textView.text = @"";
+        self.imageView.image = nil;
+    }
 }
 
 - (NSArray *)grabUsers {
@@ -158,20 +161,12 @@
 {
     [super viewWillAppear:animated];
     BNRStory *story = self.storyDetail;
-    if (!story) {
-        self.storyDetail = [[BNRStory alloc] init];
-        story = self.storyDetail;
-    }
     if (!story.image) {
         self.imageView.image = [[UIImage alloc] init];
     } else {
         self.imageView.image = story.image;
     }
-    if (!story.storyText) {
-        self.textView.text = @"";
-    } else {
-        self.textView.text = story.storyText;
-    }
+    self.textView.text = story.storyText;
 }
 
 - (void)viewWillDisppear:(BOOL)animated

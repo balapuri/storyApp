@@ -16,5 +16,6 @@
 @property (nonatomic) NSString *storyText;
 @property (nonatomic) NSMutableArray *detail;
 @property (nonatomic) double orderingValue;
+@property (nonatomic) BOOL newStory;
 
 @end

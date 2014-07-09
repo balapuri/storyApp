@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6185.7" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="qQm-eB-jCu">
     <dependencies>
-        <deployment defaultVersion="1792" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6181.2"/>
     </dependencies>
     <scenes>
@@ -104,12 +103,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Itc-Os-grA">
                                 <rect key="frame" x="62" y="251" width="197" height="153"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bG1-Hl-3M3">
-                                <rect key="frame" x="40" y="83" width="240" height="128"/>
-                                <color key="backgroundColor" red="0.91281732456357134" green="1" blue="0.94772510746737471" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G6R-9S-7fa">
                                 <rect key="frame" x="133" y="213" width="67" height="30"/>
                                 <state key="normal" title="Save Text">
@@ -119,6 +112,12 @@
                                     <action selector="saveText:" destination="bix-2I-57S" eventType="touchUpInside" id="jXU-kP-qJE"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xN2-v8-t8P">
+                                <rect key="frame" x="40" y="77" width="240" height="128"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -143,7 +142,7 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="imageView" destination="Itc-Os-grA" id="oME-XP-JvR"/>
-                        <outlet property="textView" destination="bG1-Hl-3M3" id="9vq-t4-5bb"/>
+                        <outlet property="textView" destination="xN2-v8-t8P" id="t5d-rH-JqM"/>
                         <outlet property="toolBar" destination="laI-DN-Pmx" id="3uI-y9-bXV"/>
                     </connections>
                 </viewController>

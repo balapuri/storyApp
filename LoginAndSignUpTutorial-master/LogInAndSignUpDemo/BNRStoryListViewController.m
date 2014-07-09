@@ -99,11 +99,16 @@
         BNRNewStoryViewController *svc = (BNRNewStoryViewController *)[nc topViewController];
         svc.storyDetail = story;
     } else if ([segue.identifier isEqualToString:@"ExistingStory"]) {
-        NSIndexPath *ip = [self.tableView indexPathForCell:sender];
-        BNRStory *story = self.currentStories[ip.row];
-        BNRNewStoryViewController *svc = (BNRNewStoryViewController *)segue.destinationViewController;
-        svc.storyDetail = story;
-        svc.existingStory = YES;
+        BNRStory *story = sender;
+        if (story.newStory) {
+            BNRStoryDetailViewController *svc = (BNRStoryDetailViewController *)segue.destinationViewController;
+            svc.storyDetail = story;
+            svc.existingStory = YES;
+        } else {
+            BNRStoryDetailViewController *svc = (BNRStoryDetailViewController *)segue.destinationViewController;
+            svc.storyDetail = story;
+            svc.existingStory = NO;
+        }
     }
 }
 
