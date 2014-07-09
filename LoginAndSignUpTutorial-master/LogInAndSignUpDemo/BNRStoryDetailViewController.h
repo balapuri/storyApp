@@ -9,7 +9,9 @@
 #import <Foundation/Foundation.h>
 #import "BNRStory.h"
 
-@interface BNRStoryDetailViewController : UIViewController
+@interface BNRStoryDetailViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@property (weak, nonatomic) IBOutlet UITextField *chooseTitle;
+@property (weak, nonatomic) IBOutlet UITableView *chooseUsersTableView;
 
 @property (nonatomic) BOOL existingStory;
 @property (nonatomic) BNRStory *storyDetail;
